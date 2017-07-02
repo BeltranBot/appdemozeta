@@ -1,0 +1,192 @@
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a.header {
+    background-color: #e2e2e2; /* Add a darker background color for headers */
+    cursor: default; /* Change cursor style */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+#vista { 
+text-align:center;
+background:red;
+}
+body{
+    min-height:100%; 
+    position:relative;
+}
+.ui-header{
+    height: 10vh;
+}
+ 
+#encabezado{
+    height: 20vh;
+    text-align: center;
+}
+
+#logo{
+    width:80%; 
+    margin-top: 3.5vh;
+    max-height: 100%;
+    max-width: 400px;
+    
+}
+.ui-footer{
+    height:10vh;
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+    
+}
+
+#home .ui-grid-a{
+    margin: auto;
+    height: 65vh;
+}
+.ui-content{
+    margin: auto;
+    height: 100%; 
+    
+}
+
+#home .ui-block-a{
+    text-align: center;
+    height: 50%    
+}
+
+#home .ui-block-b{
+    text-align: center;
+    height: 50%;   
+}
+
+#home .ui-content img{
+    margin-top: 20%;
+   
+}
+
+
+.img3 img{
+	width: 100%;	
+}
+
+.img2 img{
+	width: 100%;	
+}
+
+
+.img1 img{
+	max-width: 100%;	
+}
+
+.img1 :hover{
+	opacity: 0.5;
+}
+
+.img2 :hover{
+	opacity: 0.5;
+}
+.img3 :hover{
+	opacity: 0.5;
+}
+
+
+.img1{
+	max-width:100%;	
+	background: white;
+	border: 2px solid #3399ff;
+	box-sizing: border-box;
+}
+
+.img2{
+	width: 100%;	
+	background: white;
+	border: 2px solid #3399ff;
+	box-sizing: border-box;
+}
+.img3{
+	width: 100%;
+    background:  white;
+	border: 2px solid #3399ff;
+	box-sizing: border-box;
+    margin: auto;
+}
+.great img{ width:100%;
+    max-width:500px;}
+
+p{
+    text-align: center;
+}
+
+#logpage{
+    background-color: #33ccff;
+}
+#botonnuevo{
+    background-color: #33ccff;
+    font-style:italic;
+}
+#botonlimpiar{
+    background-color: #33ccff;
+    font-style:italic;
+}
+#log{
+    
+}
+
+#estiletos{
+    text-align: center;
+}
+
+#opciones{
+    margin-bottom: 4%;
+}
+
+
+#log .ui-grid-c div{
+	padding: 5px;
+	border-radius:5px;
+	width:22%;
+	margin: 1%;
+	background:#36c9f9;
+    color:azure;
+    text-align: center;
+}
+
+#log em{
+    font-weight: bold;
+}
+
+#irobjetivo ul li a{
+    margin-bottom:4%;
+}
+
+.superado{
+    color:beige;
+}

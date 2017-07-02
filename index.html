@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jqm/jquery-1.12.3.min.js"></script>
+  <script src="jqm/jquery.mobile-1.4.5.js"></script>
+  <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css">
+  <link rel="stylesheet" href="themes/backlog.css">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Backlog</title>
+</head>
+
+<body>
+  <!--INICIO-->
+  <div data-role="page" id="home" data-theme="a">
+    <div data-role="header" id="encabezado">
+      <img src="img/Natapp_logo.png" id="logo" alt="logo Natapp">
+    </div>
+    <div role="main" class="ui-content">
+      <div class="ui-grid-a">
+        <div class="ui-block-b">
+          <a href="#log" class="botones" data-transition="slide">
+                  <img src="img/nado.png" alt="logo de estilos"></a>
+        </div>
+        <div class="ui-block-b">
+          <a href="#Busqueda" class="botones" data-transition="slide" onclick="printGames()">
+                  <img src="img/cuidados.png"  alt="logo de cuidados"></a>
+        </div>
+      </div>
+    </div>
+    <div data-role="footer">
+      <a href="#info" data-role="button" data-transition="pop" data-icon="info" data-iconpos="notext" class="ui-btn-right" id="infobtn">Info</a>
+    </div>
+  </div>
+  <div data-role="page" id="estilos" data-theme="b">
+    <div data-role="header" id="encabeza3">
+      <h1>Backlog</h1>
+      <a href="#home" data-role="button" data-inline="true" data-transition="slide" data-icon="carat-l" data-iconpos="notext" class="btns" data-direction="reverse"> Volver</a>
+    </div>
+    <div role="main" class="ui-content">
+      <div id="irobjetivo">
+        <ul data-role="listview">
+          <li>
+            <a href="#log" id="logpage" data-transition="slide">Objetivos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div data-role="page" id="log" data-theme="b">
+    <div data-role="header" id="headernado">
+      <h1>Log</h1>
+      <a href="#home" data-role="button" data-inline="true" data-transition="slide" data-icon="carat-l" data-iconpos="notext" class="ui-btn-left" data-direction="reverse"> Volver</a>
+    </div>
+    <div role="main" class="ui-content">
+      <div id="opciones">
+        <a href="#nuevoregistro" id="botonnuevo" data-icon="plus" class="ui-btn ui-corner-all" data-theme="b" data-transition="fade ">Nuevo</a>
+      </div>
+      <div class="ui-grid-solo ui-shadow ui-corner-all" data-inset="true" id="vista"> </div>
+    </div>
+  </div>
+  <div data-role="page" id="nuevoregistro" data-theme="b">
+    <div data-role="header">
+      <h1>Nueva Entrada</h1>
+    </div>
+    <div role="main" class="ui-content">
+      <form>
+        <input id="nombre" required />
+        <select name="plataforma" id="plataforma">
+                  <option value="PC">PC</option>
+                  <option value="PS4">PS4</option>
+                  <option value="XBOX">XBOX</option>
+                  <option value="Switch">Nintendo Switch</option>
+               </select>
+        <div id="estiletos">
+          <a href="#log" data-role="button" data-inline="true" data-transition="fade">Cancelar</a>
+          <input type="submit" value="Guardar" data-inline="true" />
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div data-role="page" id="info" data-theme="a">
+    <div data-role="header" id="encabeza6">
+      <h1>Información</h1>
+      <a href="#home" data-role="button" data-inline="true" data-transition="fade" data-icon="carat-d" data-iconpos="notext" class="btns"> Cerrar</a>
+    </div>
+    <div role="main" class="ui-content">
+      <p>Desarrollo de Aplicaciones Multiplataforma -DMT5A -Valentino Diaz -2017.</p>
+    </div>
+  </div>
+  <div data-role="page" id="Busqueda" data-theme="b">
+    <div data-role="header" id="headernado">
+      <h1>Busqueda</h1>
+      <a href="#home" data-role="button" data-inline="true" data-transition="slide" data-icon="carat-l" data-iconpos="notext" class="ui-btn-left" data-direction="reverse"> Volver</a>
+      <div>
+        <input type="text" id="myInput" placeholder="Search for names..">
+        <ul id="myUL">
+        </ul>
+      </div>
+      <script src="main.js"></script>
+</body>
+
+</html>
